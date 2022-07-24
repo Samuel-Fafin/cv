@@ -3,6 +3,11 @@ html, body, header, h1 {
   padding: 0;
 }
 
+a {
+  color: #495C83;
+  font-weight: bold;
+}
+
 header {
   height: 100vh;
   background-color: #A8A4CE;
@@ -23,7 +28,7 @@ h2 {
   color: #495C83;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -45,6 +50,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 2rem;
+  text-align: justify;
 }
 
 hr {
@@ -58,10 +64,19 @@ hr {
 
 }
 
+li {
+  color: #495C83;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
 footer {
   width:100vw;
-  height: 30vw;
   background-color: #A8A4CE;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .note1 {
@@ -82,6 +97,8 @@ footer {
   flex-direction: column;
   -ms-align-items: center;
   align-items: center;
+
+  background-color: #FAF6FF;
 }
 
 .description {
@@ -93,20 +110,44 @@ footer {
   margin-top: 20px;
 }
 
-
-.skill-row {
+/* Skills */
+.skill-row-left {
   width: 50vw;
   margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skill-row-right {
+  width: 50vw;
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.skill-description {
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-paragraphe {
   line-height: 2rem;
 }
 
-.skill-image {
+.skill-image-left {
   width: 15%;
-  float: left;
+  height: 15%;
   margin-right: 20px;
+}
+
+.skill-image-right {
+  width: 15%;
+  height: 15%;
+  margin-left: 20px;
 }
 
 .certifications {
@@ -121,4 +162,81 @@ footer {
 .certification-image {
   width: 10%;
   display: inline;
+
+}
+
+/* Experience */
+.experience {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-row-left {
+  width: 50vw;
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.experience-image-left {
+  width: 15%;
+  height: 15%;
+  margin-right: 20px;
+}
+
+.experience-row-right {
+  width: 50vw;
+  display:flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.experience-image-right {
+  width: 15%;
+  height: 15%;
+  margin-left : 20px;
+}
+
+.experience-dates {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/* School */
+.school {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.school-row {
+  width: 50vw;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.school-image {
+  width:15%;
+  height: 15%;
+  margin-right: 20px;
+}
+
+.school-dates {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+
+.footer-div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
